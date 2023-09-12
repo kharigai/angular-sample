@@ -1,0 +1,7 @@
+<h1>Video Player Sample</h1>
+
+<label for="videoUrlInput">Enter Video URL:</label>
+<input id="videoUrlInput" [(ngModel)]="inputVideoUrl">
+<button (click)="updateVideoUrl(inputVideoUrl)">Load Video</button>
+
+<app-video-player [signedVideoUrl]="videoUrl" *ngIf="videoUrl"></app-video-player>
