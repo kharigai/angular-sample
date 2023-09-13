@@ -1,0 +1,22 @@
+.input-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* この値は入力要素とラベルの間の間隔を調整するために変更できます */
+  margin-bottom: 5px;
+}
+
+.button-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* こちらの数値は、どれくらいのマージンを取りたいかに応じて調整してください */
+}
+
+.video-player-section {
+  display: flex;
+  align-items: center;
+}
+
+#videoUrlInput {
+  width: 80%; /* これにより入力の幅が親要素の80%になります。必要に応じて値を変更してください。 */
+  max-width: 500px; /* これは入力の最大幅を制限するためのもので、必要に応じて値を調整または削除してください。 */
+}
