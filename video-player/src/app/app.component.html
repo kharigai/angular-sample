@@ -9,7 +9,16 @@
   <button (click)="updateVideoUrl(inputVideoUrl)">Load Video</button>
 </div>
 
+<div class="loop-section">
+  <input type="checkbox" [(ngModel)]="loopVideo">
+  <label>Loop Video</label>
+</div>
+
 <div class="video-player-section">
-<app-video-player [signedVideoUrl]="videoUrl" *ngIf="videoUrl"></app-video-player>
+  <app-video-player
+    [signedVideoUrl]="videoUrl"
+    [loop]="loopVideo"
+    *ngIf="videoUrl">
+  </app-video-player>
 </div>
 
